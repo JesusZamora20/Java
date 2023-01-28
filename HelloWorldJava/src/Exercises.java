@@ -5,6 +5,7 @@ public class Exercises {
         System.out.println(d);
 
         int i = 250;
+        
         long a = (long) i;
         short b = (short) a;
         System.out.println(a);
