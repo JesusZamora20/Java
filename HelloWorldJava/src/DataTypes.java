@@ -9,7 +9,7 @@ public class DataTypes {
         double nD = 123234.56456;
 
         //using var in java
-        var salary = 1000;
+        //var salary = 1000;
         System.out.println(nL);
 
         //increase and decrease
