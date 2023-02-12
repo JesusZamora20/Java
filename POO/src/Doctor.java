@@ -8,8 +8,11 @@ public class Doctor {
         System.out.println("Building the Doctor Object:" + name);
     }*/
 
-    Doctor(){
+    Doctor(String name, String speciality){
+        System.out.println("The Doctor's name is: " + name);
         id ++;
+        this.name = name;
+        this.speciality = speciality;
     }
 
     //behaviours

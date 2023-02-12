@@ -1,3 +1,5 @@
+import javax.print.Doc;
+
 import static ui.UIMenu.*;
 
 public class Main {
@@ -12,7 +14,11 @@ public class Main {
         Doctor myDoctorJesus = new Doctor();
         myDoctor.showId();*/
 
-        showMenu();
+        //showMenu();
+
+        Doctor myDoctor = new Doctor("Jesus B. Zamora","Surgeon");
+        System.out.println(myDoctor.name);
+        System.out.println(myDoctor.speciality);
     }
 }
 
