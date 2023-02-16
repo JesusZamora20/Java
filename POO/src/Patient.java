@@ -1,11 +1,12 @@
 public class Patient {
-    String name;
-    String email;
-    String address;
-    String phoneNumber;
-    String birthday;
-    double weight;
-    double height;
+    int id;
+    private String name;
+    private String email;
+    private String address;
+    private String phoneNumber;
+    private String birthday;
+    private double weight;
+    private double height;
     String blood;
 
     Patient(String name, String email){
