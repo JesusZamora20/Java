@@ -45,12 +45,18 @@ public class User {
     public String getPhoneNumber() {
         return phoneNumber;
     }
-
+    
     public void setPhoneNumber(String phoneNumber) {
         if(phoneNumber.length() > 8){
             System.out.println("Phone Number should contain 8 digits");
         } else if(phoneNumber.length() == 8) {
             this.phoneNumber = phoneNumber;
         }
+    }
+
+    @Override
+    public String toString() {
+        return "User: " + name + ", Email: " + email +
+                "\nAddress: " + address + " .Phone: " + phoneNumber;
     }
 }
