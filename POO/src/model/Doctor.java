@@ -1,12 +1,14 @@
+package model;
+
 import java.util.ArrayList;
 import java.util.Date;
 
 public class Doctor extends User{
     private String speciality;
 
-    Doctor(String name, String email){
+    public Doctor(String name, String email){
         super(name, email);
-        System.out.println("The Doctor's name is: " + name);
+        System.out.println("The model.Doctor's name is: " + name);
     }
 
     public String getSpeciality() {
