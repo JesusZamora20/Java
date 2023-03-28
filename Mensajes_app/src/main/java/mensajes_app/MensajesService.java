@@ -18,7 +18,7 @@ public class MensajesService {
     }
 
     public static void listMessages(){
-
+        MensajesDAO.readMessage();
     }
 
     public static void deleteMessage(){
