@@ -14,7 +14,7 @@ public class Cats {
         this.id = id;
     }
 
-    public String getUrl() {
+    public static String getUrl() {
         return url;
     }
 

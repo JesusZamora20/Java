@@ -13,7 +13,17 @@ public class Inicio {
                     null, botones, botones[0]);
 
             for (int i = 0; i < botones.length; i++) {
-                if(opcion.equals(botones[i]))
+                if(opcion.equals(botones[i])){
+                    opcion_menu = i;
+                }
+            }
+
+            switch (opcion_menu){
+                case 0:
+                    GatosService.VerGatos();
+                    break;
+                default:
+                    break;
             }
         } while(opcion_menu != 1);
 
