@@ -1,16 +1,16 @@
 package CatApp;
 
 public class Cats {
-    int id;
-    String url;
+    static String id;
+    static String url;
     String apiKey = "live_ZIexOh7T2wh9t6W9MY8N9IlfZVKOmy9262oMOH2IEE44KcphsvPXsqejwFhOIA9s";
     String image;
 
-    public int getId() {
+    public static String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
