@@ -1,18 +1,13 @@
 package org.example;
 
+import org.junit.Assert;
+import org.junit.Test;
+
 public class StringUtilTest {
-
-    public static void main(String[] args) {
-        String result = StringUtil.repeat("hola",3);
-        assertEquals(result,"holaholahola");
-
-        String result2 = StringUtil.repeat("hola",1);
-        assertEquals(result2,"hola");
+    @Test
+    public void testRepeat() {
+        Assert.assertEquals("holaholahola", StringUtil.repeat("hola",3));
+        Assert.assertEquals("hola",StringUtil.repeat("hola",1));
     }
 
-    private static void assertEquals(String actual, String expected) {
-        if(!actual.equals(expected)){
-            throw new RuntimeException(actual + " is not equial to " + expected);
-        }
-    }
 }
