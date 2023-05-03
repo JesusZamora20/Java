@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.Dice.Dice;
+import org.example.Dice.Player;
 import org.junit.Test;
 import org.mockito.Mockito;
 
