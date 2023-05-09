@@ -34,4 +34,27 @@ public class MovieServiceTest {
         List<Integer> movieIds = movies.stream().map(movie -> movie.getId()).collect(Collectors.toList());
         assertEquals(Arrays.asList(4,6), movieIds);
     }
+
+    @Test
+    public void return_movies_by_duration() {
+        MovieRepository movrep = Mockito.mock(MovieRepository.class);
+        Mockito.when(movrep.findAll()).thenReturn(
+                Arrays.asList(
+                        new Movie(1, "Dark Knight", 152, Genre.ACTION),
+                        new Movie(2, "Dark Knight 2", 113, Genre.THRILLER),
+                        new Movie(3, "Dark Day", 112, Genre.HORROR),
+                        new Movie(4, "Dark Day 2", 132, Genre.COMEDY),
+                        new Movie(5, "Memento", 142, Genre.ACTION),
+                        new Movie(6, "Matrix", 152, Genre.COMEDY)
+                )
+        );
+
+        MovieService ms = new MovieService(movrep);
+
+        Collection<Movie> movies = ms.findMoviesByDuration(152);
+
+        List<String> movieNames = movies.stream().map(movie -> movie.getName()).collect(Collectors.toList());
+        assertEquals(Arrays.asList("Dark Knight", "Matrix"), movieNames);
+
+    }
 }

@@ -17,4 +17,9 @@ public class MovieService {
         return mr.findAll().stream()
                 .filter(movie -> movie.getGenre() == genre).collect(Collectors.toList());
     }
+
+    public Collection<Movie> findMoviesByDuration(int duration) {
+        return mr.findAll().stream()
+                .filter(movie -> movie.getMinutes() == duration).collect(Collectors.toList());
+    }
 }
