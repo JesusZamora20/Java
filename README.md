@@ -10,6 +10,8 @@ Using Java libraries to create tests that ensure the proper behavior of the code
 
 :file_folder:  **Movies data App:**  Creating a collection of movies with attributes like *name, duration and gender* and then writing specific tests to make CRUD operations.
 
+------------
+
 ### :file_folder:  Data persistence with Java 
 Understanding how data persistence works in an information system by using a relational database and an API REST. The projects built were:
 
@@ -17,11 +19,15 @@ Understanding how data persistence works in an information system by using a rel
 
 :smiley_cat: :file_folder: **Cat_app:** Working with data persistence by showing the data of an API REST.
 
+------------
+
 ### :file_folder: OOP with Java
 Learned the principles of object oriented programming with Java:
 - Creating classes
 - Using inheritance and creating objects
 - Working with the concepts of classes, objects, inheritance, abstraction, encapsulation and polymorphism.
+
+------------
 
 ### :file_folder: HelloWorldJava
 In this course I learned the basics of Java:
